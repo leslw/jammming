@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
-function Track(){
+function Track(props){
     return (
         <div>
-            <h3>Title:</h3>
-            <p>Artist:</p>
-            <p>Album: </p>
+            <h3>{props.title} </h3>
+            <p>Artist: {props.artist} </p>
+            <p>Album: {props.album} </p>
         </div>
     )
 }
